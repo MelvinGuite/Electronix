@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -251,6 +253,125 @@ body {
     
     <section class="product-list">
         <div class="product-card">
+            <img src="computer1.png" alt="Computadora 1">
+            <h3>Computadora de Alta Gama</h3>
+            <p>Potente computadora para tareas intensivas.</p>
+            <span class="price">$1,299.99</span>
+            <form action="" method="POST">
+                <input type="hidden" name="producto_id" value="1">
+                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
+                <input type="hidden" name="producto_precio" value="1299.99">
+                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
+            </form>
+        </div>
+                <div class="product-card">
+            <img src="computer1.png" alt="Computadora 1">
+            <h3>Computadora de Alta Gama</h3>
+            <p>Potente computadora para tareas intensivas.</p>
+            <span class="price">$1,299.99</span>
+            <form action="" method="POST">
+                <input type="hidden" name="producto_id" value="1">
+                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
+                <input type="hidden" name="producto_precio" value="1299.99">
+                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
+            </form>
+        </div>
+                <div class="product-card">
+            <img src="computer1.png" alt="Computadora 1">
+            <h3>Computadora de Alta Gama</h3>
+            <p>Potente computadora para tareas intensivas.</p>
+            <span class="price">$1,299.99</span>
+            <form action="" method="POST">
+                <input type="hidden" name="producto_id" value="1">
+                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
+                <input type="hidden" name="producto_precio" value="1299.99">
+                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
+            </form>
+        </div>
+                <div class="product-card">
+            <img src="computer1.png" alt="Computadora 1">
+            <h3>Computadora de Alta Gama</h3>
+            <p>Potente computadora para tareas intensivas.</p>
+            <span class="price">$1,299.99</span>
+            <form action="" method="POST">
+                <input type="hidden" name="producto_id" value="1">
+                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
+                <input type="hidden" name="producto_precio" value="1299.99">
+                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
+            </form>
+        </div>
+                <div class="product-card">
+            <img src="computer1.png" alt="Computadora 1">
+            <h3>Computadora de Alta Gama</h3>
+            <p>Potente computadora para tareas intensivas.</p>
+            <span class="price">$1,299.99</span>
+            <form action="" method="POST">
+                <input type="hidden" name="producto_id" value="1">
+                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
+                <input type="hidden" name="producto_precio" value="1299.99">
+                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
+            </form>
+        </div>
+                <div class="product-card">
+            <img src="computer1.png" alt="Computadora 1">
+            <h3>Computadora de Alta Gama</h3>
+            <p>Potente computadora para tareas intensivas.</p>
+            <span class="price">$1,299.99</span>
+            <form action="" method="POST">
+                <input type="hidden" name="producto_id" value="1">
+                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
+                <input type="hidden" name="producto_precio" value="1299.99">
+                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
+            </form>
+        </div>
+                <div class="product-card">
+            <img src="computer1.png" alt="Computadora 1">
+            <h3>Computadora de Alta Gama</h3>
+            <p>Potente computadora para tareas intensivas.</p>
+            <span class="price">$1,299.99</span>
+            <form action="" method="POST">
+                <input type="hidden" name="producto_id" value="1">
+                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
+                <input type="hidden" name="producto_precio" value="1299.99">
+                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
+            </form>
+        </div>
+                <div class="product-card">
+            <img src="computer1.png" alt="Computadora 1">
+            <h3>Computadora de Alta Gama</h3>
+            <p>Potente computadora para tareas intensivas.</p>
+            <span class="price">$1,299.99</span>
+            <form action="" method="POST">
+                <input type="hidden" name="producto_id" value="1">
+                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
+                <input type="hidden" name="producto_precio" value="1299.99">
+                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
+            </form>
+        </div>
+                <div class="product-card">
+            <img src="computer1.png" alt="Computadora 1">
+            <h3>Computadora de Alta Gama</h3>
+            <p>Potente computadora para tareas intensivas.</p>
+            <span class="price">$1,299.99</span>
+            <form action="" method="POST">
+                <input type="hidden" name="producto_id" value="1">
+                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
+                <input type="hidden" name="producto_precio" value="1299.99">
+                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
+            </form>
+        </div>
+                <div class="product-card">
+            <img src="computer1.png" alt="Computadora 1">
+            <h3>Computadora de Alta Gama</h3>
+            <p>Potente computadora para tareas intensivas.</p>
+            <span class="price">$1,299.99</span>
+            <form action="" method="POST">
+                <input type="hidden" name="producto_id" value="1">
+                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
+                <input type="hidden" name="producto_precio" value="1299.99">
+                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
+            </form>
+        </div>        <div class="product-card">
             <img src="computer1.png" alt="Computadora 1">
             <h3>Computadora de Alta Gama</h3>
             <p>Potente computadora para tareas intensivas.</p>
