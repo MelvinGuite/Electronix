@@ -50,6 +50,7 @@ public class Connmysql {
     		cl.setString(6, listaProveedor.get(5));
     		cl.setString(7,listaProveedor.get(6));
     		cl.execute();
+    		cl.close();
     	}
     	
     	//Muestra Proveedores
@@ -58,6 +59,15 @@ public class Connmysql {
     		String consulta = "SELECT * FROM proveedor;";
     		Statement st = conexion.createStatement();		
     		return st.executeQuery(consulta);
+    	}
+    	
+    	public void RegistraBodega (ArrayList<String> lista) throws SQLException {
+    		CallableStatement cl = conexion.prepareCall(" { CALL RegistraBodega (?, ?, ?) } ");
+    		cl.setString(1, lista.get(0));
+    		cl.setInt(2, Integer.parseInt(lista.get(1)));
+    		cl.setInt(3, Integer.parseInt(lista.get(2)));
+    		cl.execute();
+    		cl.close();
     	}
 }
 

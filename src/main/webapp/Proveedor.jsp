@@ -78,7 +78,7 @@ if(objproveedor instanceof List) {
 	
 	if(proveedores != null ) {   %>
 		<h2>Listado de Proveedores </h2>
-<section class="registration-form">
+<section class="registration-form"></section>
     <h2>Lista de proveedores</h2>
 <ul>
 <%		for(int i = 0; i < proveedores.size(); i+=4){       
@@ -94,17 +94,5 @@ if(objproveedor instanceof List) {
 	}
 }
 %>
-<section class="registration-form">
-    <form id="customer-registration" action="RegistraProveedor" method="get"> 
-		<input type="text" id="razon_social" name="razon_social" placeholder="Razón Social" required="required">
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required="required">
-        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required="required">
-        <input type="number" id="nit" name="nit" placeholder="NIT" required="required">
-        <input type="number" id="telefono" name="telefono" placeholder="Teléfono" required="required">
-        <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required="required">
-        <input type="text" id="direccion" name="direccion" placeholder="Dirección" required="required">
-        <button type="submit" name="ver" id="ver" formnovalidate="formnovalidate">Ver Proveedores</button>
-    </form>
-</section>
 </body>
 </html>
