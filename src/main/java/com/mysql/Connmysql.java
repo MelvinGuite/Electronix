@@ -61,6 +61,7 @@ public class Connmysql {
     		return st.executeQuery(consulta);
     	}
     	
+    	//Registro de bodega
     	public void RegistraBodega (ArrayList<String> lista) throws SQLException {
     		CallableStatement cl = conexion.prepareCall(" { CALL RegistraBodega (?, ?, ?) } ");
     		cl.setString(1, lista.get(0));
@@ -69,23 +70,29 @@ public class Connmysql {
     		cl.execute();
     		cl.close();
     	}
+    	
+    	//Registro Producto 
+    	public void RegistraProducto(ArrayList<String> datos) throws SQLException {
+    	    CallableStatement cl = conexion.prepareCall("{call RegistraProducto (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) }");
+    	    cl.setString(1, datos.get(0));
+    	    cl.setString(2, datos.get(1));
+    	    cl.setString(3, datos.get(2));
+    	    cl.setInt(4, Integer.parseInt(datos.get(3)));
+    	    cl.setInt(5, Integer.parseInt(datos.get(4)));
+    	    cl.setInt(6, Integer.parseInt(datos.get(5)));
+    	    cl.setInt(7, Integer.parseInt(datos.get(6)));
+    	    cl.setInt(8, Integer.parseInt(datos.get(7)));
+    	    cl.setInt(9, Integer.parseInt(datos.get(8)));
+    	    cl.setString(10, datos.get(9));
+    	    
+    	    // Ejecuta el procedimiento almacenado
+    	    cl.execute();
+    	    System.out.println("Procedimiento almacenado ejecutado");
+    	    // Cierra el CallableStatement
+    	    cl.close();
+    	}
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
