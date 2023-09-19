@@ -1,18 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-    
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Tienda de Tecnología</title>
-</head>
-<style>
-/* ... (código anterior) ... */
-
+    <title>Ver Producto</title>
+    <style>
 body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
@@ -231,13 +224,10 @@ body {
     max-width: 1200px;
 }
 
-
-
-/* ... (código posterior) ... */
-
 </style>
 </head>
 <body>
+
     <header class="header">
         <div class="logo">Electronix GT</div>
         <nav class="nav">
@@ -250,146 +240,54 @@ body {
             </ul>
         </nav>
     </header>
-    
-    <section class="product-list">
-        <div class="product-card">
-            <img src="computer1.png" alt="Computadora 1">
-            <h3>Computadora de Alta Gama</h3>
-            <p>Potente computadora para tareas intensivas.</p>
-            <span class="price">$1,299.99</span>
-            <form action="" method="POST">
-                <input type="hidden" name="producto_id" value="1">
-                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
-                <input type="hidden" name="producto_precio" value="1299.99">
-                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
-            </form>
-        </div>
-                <div class="product-card">
-            <img src="computer1.png" alt="Computadora 1">
-            <h3>Computadora de Alta Gama</h3>
-            <p>Potente computadora para tareas intensivas.</p>
-            <span class="price">$1,299.99</span>
-            <form action="" method="POST">
-                <input type="hidden" name="producto_id" value="1">
-                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
-                <input type="hidden" name="producto_precio" value="1299.99">
-                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
-            </form>
-        </div>
-                <div class="product-card">
-            <img src="computer1.png" alt="Computadora 1">
-            <h3>Computadora de Alta Gama</h3>
-            <p>Potente computadora para tareas intensivas.</p>
-            <span class="price">$1,299.99</span>
-            <form action="" method="POST">
-                <input type="hidden" name="producto_id" value="1">
-                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
-                <input type="hidden" name="producto_precio" value="1299.99">
-                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
-            </form>
-        </div>
-                <div class="product-card">
-            <img src="computer1.png" alt="Computadora 1">
-            <h3>Computadora de Alta Gama</h3>
-            <p>Potente computadora para tareas intensivas.</p>
-            <span class="price">$1,299.99</span>
-            <form action="" method="POST">
-                <input type="hidden" name="producto_id" value="1">
-                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
-                <input type="hidden" name="producto_precio" value="1299.99">
-                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
-            </form>
-        </div>
-                <div class="product-card">
-            <img src="computer1.png" alt="Computadora 1">
-            <h3>Computadora de Alta Gama</h3>
-            <p>Potente computadora para tareas intensivas.</p>
-            <span class="price">$1,299.99</span>
-            <form action="" method="POST">
-                <input type="hidden" name="producto_id" value="1">
-                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
-                <input type="hidden" name="producto_precio" value="1299.99">
-                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
-            </form>
-        </div>
-                <div class="product-card">
-            <img src="computer1.png" alt="Computadora 1">
-            <h3>Computadora de Alta Gama</h3>
-            <p>Potente computadora para tareas intensivas.</p>
-            <span class="price">$1,299.99</span>
-            <form action="" method="POST">
-                <input type="hidden" name="producto_id" value="1">
-                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
-                <input type="hidden" name="producto_precio" value="1299.99">
-                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
-            </form>
-        </div>
-                <div class="product-card">
-            <img src="computer1.png" alt="Computadora 1">
-            <h3>Computadora de Alta Gama</h3>
-            <p>Potente computadora para tareas intensivas.</p>
-            <span class="price">$1,299.99</span>
-            <form action="" method="POST">
-                <input type="hidden" name="producto_id" value="1">
-                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
-                <input type="hidden" name="producto_precio" value="1299.99">
-                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
-            </form>
-        </div>
-                <div class="product-card">
-            <img src="computer1.png" alt="Computadora 1">
-            <h3>Computadora de Alta Gama</h3>
-            <p>Potente computadora para tareas intensivas.</p>
-            <span class="price">$1,299.99</span>
-            <form action="" method="POST">
-                <input type="hidden" name="producto_id" value="1">
-                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
-                <input type="hidden" name="producto_precio" value="1299.99">
-                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
-            </form>
-        </div>
-                <div class="product-card">
-            <img src="computer1.png" alt="Computadora 1">
-            <h3>Computadora de Alta Gama</h3>
-            <p>Potente computadora para tareas intensivas.</p>
-            <span class="price">$1,299.99</span>
-            <form action="" method="POST">
-                <input type="hidden" name="producto_id" value="1">
-                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
-                <input type="hidden" name="producto_precio" value="1299.99">
-                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
-            </form>
-        </div>
-                <div class="product-card">
-            <img src="computer1.png" alt="Computadora 1">
-            <h3>Computadora de Alta Gama</h3>
-            <p>Potente computadora para tareas intensivas.</p>
-            <span class="price">$1,299.99</span>
-            <form action="" method="POST">
-                <input type="hidden" name="producto_id" value="1">
-                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
-                <input type="hidden" name="producto_precio" value="1299.99">
-                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
-            </form>
-        </div>        <div class="product-card">
-            <img src="computer1.png" alt="Computadora 1">
-            <h3>Computadora de Alta Gama</h3>
-            <p>Potente computadora para tareas intensivas.</p>
-            <span class="price">$1,299.99</span>
-            <form action="" method="POST">
-                <input type="hidden" name="producto_id" value="1">
-                <input type="hidden" name="producto_nombre" value="Computadora de Alta Gama">
-                <input type="hidden" name="producto_precio" value="1299.99">
-                <button type="submit" class="add-to-cart">Agregar al Carrito</button>
-            </form>
-        </div>
-        <!-- Agregar más productos aquí -->
-    </section>
 
-    <footer class="footer">
+    <section class="product-list">
+<div id="product-container"></div>
+
+<div class="product-card">
+    <img src="" alt="">
+    <h3></h3>
+    <p></p>
+    <span class="price"></span>
+    <form action="" method="POST">
+        <input type="hidden" name="producto_id" value="">
+        <input type="hidden" name="producto_nombre" value="">
+        <input type="hidden" name="producto_precio" value="">
+        <button type="submit" class="add-to-cart">Agregar al Carrito</button>
+    </form>
+</div>
+    </section>
+        <footer class="footer">
         <p>&copy; 2023 Tienda de Tecnología. Todos los derechos reservados.</p>
     </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: "VerProducto", // URL del servlet
+        dataType: "json",
+        success: function(data) {
+            // Recorrer los datos JSON y llenar las tarjetas de producto
+            for (var i = 0; i < data.length; i++) {
+                var product = data[i];
+                var productCard = $(".product-card").eq(i);
+                productCard.find("img").attr("src", product.imagen);
+                productCard.find("img").attr("alt", product.nombre);
+                productCard.find("h3").text(product.nombre);
+                productCard.find("p").text(product.descripcion);
+                productCard.find(".price").text("$" + product.precio_venta.toFixed(2));
+                productCard.find("input[name='producto_id']").val(product.id_producto);
+                productCard.find("input[name='producto_nombre']").val(product.nombre);
+                productCard.find("input[name='producto_precio']").val(product.precio_venta.toFixed(2));
+            }
+        },
+        error: function() {
+            alert("Error al cargar los datos.");
+        }
+    });
+});
+</script>
+
 </body>
 </html>
-
-

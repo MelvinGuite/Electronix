@@ -3,6 +3,7 @@ package com.mysql;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -90,6 +91,13 @@ public class Connmysql {
     	    System.out.println("Procedimiento almacenado ejecutado");
     	    // Cierra el CallableStatement
     	    cl.close();
+    	}
+    	
+    	//ver productos
+    	public ResultSet VerProducto() throws SQLException{
+    		String consulta = "select * from producto p ;";
+    		PreparedStatement ps = conexion.prepareStatement(consulta);
+    		return ps.executeQuery();
     	}
 
 }
