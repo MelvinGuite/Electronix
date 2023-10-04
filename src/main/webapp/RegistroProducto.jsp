@@ -65,9 +65,19 @@
             }
         }
     </script>
+    <script type="text/javascript">
+function showLoader() {
+  document.getElementById("loader").style.display = "block";
+}
+function hideLoader() {
+  document.getElementById("loader").style.display = "none";
+}
+</script>
 </head>
 <body>
-
+<div id="loader" style="display: none;">
+  <img src="loader.gif" alt="Cargando..." />
+</div>
 <h1>Registro de Producto</h1>
 <h2>${Producto}</h2>
     <form method="post" action="RegistraProducto" enctype="multipart/form-data">
